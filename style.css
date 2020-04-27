@@ -1,0 +1,145 @@
+
+.navbar-brand {
+	font-family: 'Major Mono Display', monospace;
+	font-size: 1.5rem;
+}
+
+.nav-link {
+	font-family: 'Raleway', sans-serif;
+}
+
+.title-container {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    background: transparent;
+ }
+
+ .title {
+   color: white;
+     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    z-index: 2;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1.5rem;
+ }
+
+
+
+#mc {
+	width: 100%;
+
+}
+
+.vid {
+    position: absolute;
+    top: 0; left:0;
+    width: 100%; height: 100%;
+    z-index: -1;
+}
+
+.mc {
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mc video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.mc .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
+#lp-footer{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 4%;
+}
+
+#footer-nav-list {
+	list-style: none;
+}
+
+#footer-nav-list li {
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+}
+
+#footer-nav-list li:hover{
+	text-decoration: underline;
+}
+
+#gallery-link{
+	margin: 0 25% 0 25%;
+}
+
+
+button {
+	outline: none;
+}
+
+@media(min-width: 992px){
+	.nav-link{
+	 display:none;
+	}
+}
+
+	@media(max-width: 991px){
+	.mc{
+      display: block;
+      position: absolute;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .navbar{
+      z-index: 2;
+    }
+    .mc .overlay {
+      position: fixed;
+    }
+
+    #lp-footer {
+    	display: none;
+    }
+
+
+}
