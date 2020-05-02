@@ -3,6 +3,10 @@ a {
 	letter-spacing: 3px;
 }
 
+ ul {
+    	list-style: none;
+    }
+
 .navbar-brand {
 	font-family: 'Major Mono Display', monospace;
 	font-size: 1.5rem;
@@ -130,8 +134,12 @@ button {
 	padding-top: 10px;
 }
 
-#gallery-anchor img {
+.gallery-anchor img {
     	margin-bottom: 10%;
+      max-height: 192.91px;
+      min-width: 192.91px;
+      object-fit: cover;
+      width: 100%;
     }
 
     .navbar-expand-lg .navbar-nav {
@@ -142,6 +150,23 @@ button {
     	font-family: 'Montserrat', sans-serif;
     }
 
+    .connect-container{
+    	font-family: 'Montserrat', sans-serif;
+    	width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 10%;
+		font-size: 1.5rem;
+    }
+
+    .connect-item a {
+    	color: black;
+    }
+
+     .connect-container img {
+     	width: 150px;
+     	margin-bottom: 10%
+     }
 
 
 @media(min-width: 992px){
@@ -179,6 +204,39 @@ button {
 
     #lp-footer {
     	display: none;
-
     }
+
+    .connect-container{
+		font-size: 1.5rem;
+	}
+
+	.connect-item {
+		margin-bottom: 15%;
+	}
+
+	.connect-container img{
+		margin-bottom: 3%;
+	}
+
+  .gallery-anchor img {
+    max-height: 511.66px;
+  }
+
+  @media(max-width: 766px){
+    .gallery-anchor img {
+    max-height: 511.66px;
+  }
+  }
+
+	@media(max-width: 400px){
+		.title{
+			font-size: 1.25rem;
+		}
+	}
+
+	@media(max-width: 350px){
+		.title{
+			font-size: 1rem;
+		}
+	}
 }
